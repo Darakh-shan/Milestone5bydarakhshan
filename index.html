@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable  Resum Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Shareable Resum Builder </h1>
+    <form id="form">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="username">userName:</label>
+        <input type="text" id="username" name="username"   placeholder="Enter your username" required><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"   placeholder="Enter your name" required><br>
+        <br>
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="phone">Contact No:</label>
+        <input type="phone" id="phone" name="phone"   placeholder="Enter your contact number"required><br>
+        </input>
+
+    </fieldset><br>
+    <!-- Education -->
+    <fieldset><br>
+        <legend>Education</legend>
+        <label for="education">Education</label>
+        <textarea id="education" name="education"  placeholder="Enter your education" rows="4"></textarea>
+    </fieldset><br>
+    <!-- Experience -->
+    <fieldset>
+        <legend>Experience</legend>
+        <label for="Experience">Experience</label>
+        <textarea id="Experience" name="Experience" rows="4"  placeholder="Enter your experience"></textarea>
+     </fieldset>
+    <!-- Skills  -->
+    <fieldset id="skillhide">
+        <legend >Skills</legend>
+        <label for="Skills">Skills</label>
+        <textarea id="Skills" name="Skills" rows="4"  placeholder="Enter your Skills"></textarea>
+    </fieldset>
+<button id="Submit">Generate Resume</button>
+
+    </form>
+    <!-- Dynamic Editable & Shareable Resum -->
+    <div id="resumeOutput" contenteditable="true">
+    </div>
+    <!-- Download & shareable link -->
+     <div id="link">
+        <h2>Shareable Link</h2>
+        <a href="#" id="shareable_link" target="_blank"></a><br>
+       <button id="download_button">Download as PDF</button>
+     </div>
+    <script src="app.js"></script>
+<br><br>
+ <footer>
+    <h6><b>Design by Darakhshan &#x1f394;</b></h6>
+    <h6>RollNo 367171 &#174;</h6>
+</footer>
+</body>
+</html>
